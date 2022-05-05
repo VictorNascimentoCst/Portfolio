@@ -34,10 +34,10 @@
                 <h1>Victor Nascimento</h1>
                 <h5>Front-end Developer</h5>
             </div>
-            <div id="arrow">
-                <i class="fa-solid fa-circle-arrow-down"></i>
+            <div onclick="displayabout()" id="arrow">
+                <i id="animation" class="fa-solid fa-circle-arrow-down"></i>
             </div>
-            <div id="about">
+            <div style="display: none;" id="about">
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto enim nostrum voluptatem repellat, fugit rem, expedita molestiae adipisci maiores impedit iusto omnis ut nulla possimus blanditiis odit dolorem ad. Maxime.</p>
             </div>
             <div class="form">
@@ -51,5 +51,14 @@
             </div>
         </section>
     </main>
+    <script>
+        function displayabout() {
+            var arrow = document.getElementById('animation');
+            arrow.classList.toggle('rotate');
+            var display = document.getElementById('about');
+            display.classList.toggle('active');
+
+        }
+    </script>
 </body>
 </html>

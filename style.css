@@ -21,12 +21,16 @@ a{
 body {
 
     background: linear-gradient(90deg, #1e130c, #9a8478);
+    
+    
 }
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px;
+    border-bottom: 2px solid black;
+    margin-bottom: 35px;
 
 }
 header ul {
@@ -36,25 +40,90 @@ header ul li {padding: 8px;}
 .container {
     text-align: center;
 }
+header ul li a:hover{
+    color: rgb(175, 175, 55);
+
+} 
 .container .name h1 {
     font-size: 54px;
 }
 .container .name h5 {
-    font-size: 22px;
+    font-size: 28px;
 }
-.container #about p {
+#arrow{
+    font-size: 35px;
+    cursor: pointer;
+    animation: blink 1s steps(5, start) infinite;
+}
+#animation {
+    transition: 300ms;
+}
+@keyframes blink {
+    to {
+        visibility: hidden;
+    }
+}
+.rotate {
+    transform: rotate(180deg);
+    transition: 300ms;
+}
+.active {
+    display: block !important; 
+    
+}
+#about p {
     max-width: 45%;
     margin: 0 auto;
 }
 .form {
-    width: 40%;
+    width: 60%;
     margin: 0 auto;
+    margin-top: 20px;
 }
 .form input {
 width: 50%;
+padding: 5px;
+border: none;
+border-radius: 5px 0px 0px 5px;
 
 }
 .form button {
     width: 15%;
+    background-color: rgb(32, 29, 29);
+    padding: 5px ;
+    cursor: pointer;
+    border: none;
+    font-weight: 600;
+    transition: 350ms;
+    border-radius: 0px 5px 5px 0px;
+    margin-left: -5px;
+    margin-top: 10px;
     
+    }
+
+    .form button:hover {
+        background-color: rgb(175, 175, 55);
+        color: #1e130c;
+    }
+
+    @media only screen and (max-width: 768px){
+        .form {width: 100%;}
+    }
+
+
+    @media only screen and (max-width: 480px ) {
+        .container .name h1 {
+            font-size: 44px;
+        }
+        .container .name h5 {
+            font-size: 20px;
+        }
+        #about p {
+            max-width: 80%;
+            text-align: justify;
+        }
+        header ul li a{
+            font-size: 20px;
+        
+        } 
     }
