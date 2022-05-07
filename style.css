@@ -39,10 +39,11 @@ header ul {
 header ul li {padding: 8px;}
 .container {
     text-align: center;
+
 }
 header ul li a:hover{
     color: rgb(175, 175, 55);
-
+    text-decoration: underline;
 } 
 .container .name h1 {
     font-size: 54px;
