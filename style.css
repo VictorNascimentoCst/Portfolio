@@ -2,7 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    color: rgb(255, 255, 255) !important;
+    color: rgb(255, 255, 255);
     font-family: 'Poppins', sans-serif;
 }
 .logo {
@@ -23,6 +23,7 @@ ul {
 }
 a{
     text-decoration: none;
+   ;
 }
 body {
 
@@ -50,7 +51,7 @@ header ul li:last-child {margin-right: 15px;
 
 }
 header ul li a:hover{
-    color: rgb(175, 175, 55) !important;
+    color: rgb(175, 175, 55) ;
     text-decoration: underline;
 } 
 .container .name h1 {
@@ -125,12 +126,15 @@ border-radius: 5px 0px 0px 5px;
         justify-content: space-around  ;
         background: linear-gradient(90deg, #6f451852, #d4a27654) ;
         border-radius: 15px;
-        border: 3px solid black;
-        
+        border: 3px solid black;  
     }
+  
     .projeto {
         background-color: rgb(0, 0, 0);
         border: 3px solid black;
+    }
+    .button-projeto {
+        color: black;
     }
     
     .card-img {
