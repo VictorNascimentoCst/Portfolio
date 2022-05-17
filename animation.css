@@ -1,33 +1,61 @@
-html, body {
-    height: 100%;
-    margin: 0;
-}
-.outer {
-    height:100%;
-    overflow: hidden;
-}
-.inner {
-    height:200%;
-    width:100%;
-    -webkit-animation:mymove 5s linear infinite;
-    /* Safari and Chrome */
-    animation:mymove 15s linear infinite;
-    background-image: url('./img/netflix-interface.png');
-    background-size: 100% 50%;
-}
-@-webkit-keyframes mymove {
-    from {
-        background-position: 0% 0%;
+
+
+@keyframes wiggle {
+    0%, 7% {
+      transform: rotateZ(0);
     }
-    to {
-        background-position: 0% -100%;
+    15% {
+      transform: rotateZ(-15deg);
     }
-}
-@keyframes mymove {
-    from {
-        background-position: 0% 0%;
+    20% {
+      transform: rotateZ(10deg);
     }
-    to {
-        background-position: 0% -100%;
+    25% {
+      transform: rotateZ(-10deg);
     }
-}
+    30% {
+      transform: rotateZ(6deg);
+    }
+    35% {
+      transform: rotateZ(-4deg);
+    }
+    40%, 100% {
+      transform: rotateZ(0);
+    }
+  }
+  
+  
+  .main-button-projeto {
+    background: rgb(255, 255, 255);
+    border: none;
+    border: 3px solid rgb(0, 0, 0);
+    border-radius: 15px;
+    color: #fff;
+    font-family: Helvetica, Arial, Sans-serif;
+    font-size: 1em;
+    transform-origin: 50% 5em;
+  }
+
+  @keyframes fadeInText {
+      from {
+          opacity: 0;
+      }
+      to {
+          opacity: 1;
+      }
+  }
+  @keyframes revealBlock {
+      from{transform: translateX(0);
+      }
+      to {
+          transform: translateX(100%);
+      }
+  }
+  @keyframes enLargeBlock {
+      from {
+          width: 0%;
+      }
+      to {
+          width: 100%;
+      }
+  }
