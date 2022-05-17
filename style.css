@@ -119,23 +119,18 @@ border-radius: 5px 0px 0px 5px;
 
 
     .card {
+        width: 100%;
         margin-top: 25px;
         padding: 10px 0px 10px 0px;
         color: black;
-        display: flex;
-        justify-content: space-around  ;
-        
+        display: none;
+        justify-content: space-around;
+        flex-direction: row;
+        height: 300px;
+        margin-bottom: 65px;
         border-radius: 15px;
-       
     }
   
-    .projeto {
-        background-color: rgb(0, 0, 0);
-        border: 3px solid black;
-        border-radius: 10px;
-        
-        
-    }
     .txt-button {
        color: black;
     }
@@ -175,4 +170,61 @@ border-radius: 5px 0px 0px 5px;
             font-size: 20px;
         
         } 
+    }
+
+
+    .projeto {
+        height: 300px;
+        width: 550px;
+        border-radius: 5px;
+        display: flex; 
+        justify-content: center;       
+    }
+    .projeto-1 {
+        background-image: url(/img/netflix-interface.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .projeto-2 {
+        background-image: url(/img/print-bleach.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        
+    }
+    
+    .button-projeto {
+        margin-top: 310px;
+       background-color: rgba(192, 194, 53, 0.288);
+       border: none;
+       height: 40px;
+       width: 90px;  
+       transition: 0.5s ease-in-out;  
+       border-radius: 15px;  
+      
+    }
+    .button-projeto:hover{
+        background-color: rgba(170, 168, 36, 0.753);
+        color: black;
+    }
+    .main-button-projeto {
+        height: 100px;
+        width: 100px;
+        border-radius: 20px;
+        background-image: url(./img/project.png);
+        background-size: cover;
+        transition: 0.2s ease-in-out;
+    }
+    .main-button-projeto:hover {
+       height: 120px;
+       width: 120px;
+
+    }
+    .projetos {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 30px;
+        
     }

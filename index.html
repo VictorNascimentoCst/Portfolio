@@ -41,47 +41,7 @@
             </div>
             <div style="display: none;" id="about">
                 <p>Eu sou Victor Nascimento, tenho iniciado meu estudo na area da programação, cursando "Análise e desenvolvimento de sistema" no inicio do ano de 2022. Do início aos meus estudos focando em me tornar um desenvolvedor Front-end, e por isso tenho praticado HTML, CSS, JavaScript, Bootstrap. Tenho muita vontade de aprender e com o esforço e pratica procuro aprender cada dia mais sobre o universo da programação!</p>
-                
-
-                <div class="card" >
-                    <div class="projeto">
-                    <img src="./img/netflixprintmenor.png" class="card-img" alt="...">
-                    <div class="card-body">
-                      <h5 class="card-title">CLONE NETFLIX</h5>
-                      <p class="card-text">Explicação</p>
-                      <button class="button-projeto">
-                      <a href="#" class="txt-button">Confira !</a>
-                      </button>
-                    </div>
-                    </div>
-                    <div class="projeto">
-                        <img src="/img/loading.webp" class="card-img" alt="...">
-                        <div class="card-body">
-                          <h5 class="card-title">NOVO PROJETO</h5>
-                          <p class="card-text">Explicação</p>
-                          <button class="button-projeto">
-                          <a href="#" class="txt-button">Confira !</a>
-                        </button>
-                        </div>
-                        </div>
-                        <div class="projeto">
-                            <img src="/img/loading.webp" class="card-img" alt="...">
-                            <div class="card-body">
-                              <h5 class="card-title">NOVO PROJETO</h5>
-                              <p class="card-text">Explicação</p>
-                              <button class="button-projeto">
-                              <a href="#" class="txt-button">Confira !</a>
-                            </button>
-                            </div>
-                            </div>
-                </div>
-                
-
-
-
-
-
-
+                                
 
             </div>
             
@@ -95,15 +55,34 @@
                 </form>
             </div>
         </section>
-    </main>
-    <script>
-        function displayabout() {
-            var arrow = document.getElementById('animation');
-            arrow.classList.toggle('rotate');
-            var display = document.getElementById('about');
-            display.classList.toggle('active');
 
-        }
-    </script>
+        <section class="projetos">
+            <button class="main-button-projeto" onclick="showprojects()">
+                <a href=""></a>
+            </button>
+            <h3>Projetos</h3>
+
+            <div id="seccao-projetos" class="card" >
+                    
+                <div id="botao-do-projeto" class="projeto projeto-1">
+                    <button class="button-projeto">Confira !
+                        <a href=""></a>
+                    </button>
+                </div>
+    
+                <div class="projeto projeto-2">
+                 <button class="button-projeto">Confira !
+                     <a href=""></a>
+                 </button>
+             </div>
+                         
+                     
+            </div>
+        </section>
+
+        
+    </main>
+
+    <script src="./path/index.js"></script>
 </body>
 </html>
