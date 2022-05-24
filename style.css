@@ -60,13 +60,13 @@ header ul li a:hover{
     font-size: 54px;
     width: 520px;
     opacity: 0;
-    animation: fadeInText 0s 1.1s both;
+    animation: fadeInText 1.0s 0.6s both;
 }
 .container .name h5 {
     width: 300px;
     margin-left: 540px;
     font-size: 28px;
-    animation: fadeInText .2s 2.2s both;
+    animation: fadeInText 0.2s 1.6s both;
 }
 #arrow{
     font-size: 35px;
@@ -124,28 +124,12 @@ border-radius: 5px 0px 0px 5px;
         background-color: rgb(175, 175, 55);
         color: #1e130c;
     }
-
-
-    .card {
-        width: 100%;
-        margin-top: 25px;
-        padding-top: 50px;
-        padding-bottom: 90px;
-        background-color: rgba(0, 0, 0, 0.322);
-        color: black;
-        display: none;
-        justify-content: space-around;
-        flex-direction: row;
-        margin-bottom: 65px;
-        border-radius: 15px;
-    }
-    
+   
     .txt-button {
        color: black;
     }
     .button-projeto {
-        width: 65px;
-        height: 25px;
+     
     }
     
     .card-img {
@@ -186,35 +170,46 @@ border-radius: 5px 0px 0px 5px;
         height: 300px;
         width: 550px;
         border-radius: 5px;
+        border: 2px solid rgba(255, 255, 255, 0.418);
         display: flex; 
-        justify-content: center;       
+        justify-content: center;     
     }
     .projeto-1 {
-        background-image: url(/img/netflix-interface.png);
+        background: linear-gradient(rgba(0,0,0,.70),rgba(0,0,0,.50)100%), url(/img/netflix-interface.png);
         background-size: cover;
         background-repeat: no-repeat;
+    }
+    .projeto-1:hover {
+        background: url(/img/netflix-interface.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .projeto-2:hover {
+        background-image: url(/img/print-bleach.png);
+        background-size: cover;
+        background-repeat: no-repeat; 
     }
 
     .projeto-2 {
-        background-image: url(/img/print-bleach.png);
+        background-image: linear-gradient(rgba(0,0,0,.70),rgba(0,0,0,.50)100%), url(/img/print-bleach.png);
         background-size: cover;
-        background-repeat: no-repeat;
-        
-    }
-    
+        background-repeat: no-repeat; 
+    }    
     .button-projeto {
         margin-top: 310px;
        background-color: rgba(192, 194, 53, 0.288);
        border: none;
        height: 40px;
        width: 90px;  
-       transition: 0.5s ease-in-out;  
+       transition: 0.2s ease-in-out;  
        border-radius: 15px;  
-      
     }
     .button-projeto:hover{
         background-color: rgba(170, 168, 36, 0.753);
         color: black;
+        height: 50px ;
+        width: 100px;
+        
     }
     .main-button-projeto {
         height: 100px;
@@ -225,6 +220,7 @@ border-radius: 5px 0px 0px 5px;
         transition: 0.2s ease-in-out;
         animation: wiggle 2s linear infinite;
         cursor: pointer;
+        margin-top: 8px;
     }
     .projetos {
         display: flex;
@@ -251,7 +247,7 @@ border-radius: 5px 0px 0px 5px;
         width: 100%;
         background-color: yellow;
         transform: translateX(-100%);
-        animation: enLargeBlock .5s 0.6s both, revealBlock 1.5s 1.1s;
+        animation: enLargeBlock .2s 0.6s both, revealBlock 1.5s 0.6s;
         
     }
     .text-block-2 {
@@ -267,6 +263,45 @@ border-radius: 5px 0px 0px 5px;
         width: 100%;
         background-color: yellow;
         transform: translateX(-100%);
-        animation: enLargeBlock .5s 0.6s both, revealBlock 1.1s 2.2s;
+        animation: enLargeBlock .2s 0.6s both, revealBlock 1.1s 1.5s;
         
     }
+.input-email {
+    color: black ;
+}
+
+
+
+
+
+
+
+
+
+div#hint{
+    background-color: rgba(0, 0, 0, 0.322);
+    color: orangered;
+    box-sizing: border-box;
+    visibility: hidden;  
+    border-radius: 10px;
+    display: flex;
+    width: 0px;
+    padding: 0px;
+    justify-content: space-around;
+    flex-direction: row;
+    height: 0px; 
+    overflow: hidden;
+    font-weight: bold;
+    transition: height 0.8s, width 0.8s, padding 1s, visibility 1s, opacity 0.5s ease-out;
+  }
+  .botao-do-teste {
+      color: black;
+      height: 100px;
+        width: 100px;
+        border-radius: 20px;
+        background-image: url(./img/project.png);
+        background-size: cover;
+        transition: 0.2s ease-in-out;
+        animation: wiggle 2s linear infinite;
+        cursor: pointer;
+  }
