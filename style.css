@@ -203,6 +203,7 @@ border-radius: 5px 0px 0px 5px;
        width: 90px;  
        transition: 0.2s ease-in-out;  
        border-radius: 15px;  
+       cursor: pointer;
     }
     .button-projeto:hover{
         background-color: rgba(170, 168, 36, 0.753);
