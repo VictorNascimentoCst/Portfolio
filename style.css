@@ -48,6 +48,11 @@ header ul li:last-child {margin-right: 15px;
 }
 .container {
     text-align: center;
+    display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 30px;
 
 }
 header ul li a:hover{
@@ -56,15 +61,11 @@ header ul li a:hover{
 } 
 
 .container .name h1 {
-    margin-left: 420px;
     font-size: 54px;
-    width: 520px;
     opacity: 0;
     animation: fadeInText 1.0s 0.6s both;
 }
 .container .name h5 {
-    width: 300px;
-    margin-left: 540px;
     font-size: 28px;
     animation: fadeInText 0.2s 1.6s both;
 }
@@ -264,7 +265,7 @@ border-radius: 5px 0px 0px 5px;
         width: 100%;
         background-color: yellow;
         transform: translateX(-100%);
-        animation: enLargeBlock .2s 0.6s both, revealBlock 1.1s 1.5s;
+        animation: enLargeBlock 0.8s 1.0s both, revealBlock 1.7s 1.4s;
         
     }
 .input-email {
